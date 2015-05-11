@@ -1,2 +1,3 @@
 # bmem
-convenience and plotting function working with rstan mixed effects objects
+convenience and plotting functions for working with rstan mixed effects models
+
