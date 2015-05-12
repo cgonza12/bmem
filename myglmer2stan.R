@@ -618,12 +618,12 @@ myglmer2stan <- function (formula, data, family = "gaussian", varpriors = "flat"
       if (name == "Intercept") {
         if (family[[f]] != "ordered") {
           m_model <- paste(m_model, indent, name, var_suffix[f], 
-                           " ~ normal( 0 , 10 );\n", sep = "")
+                           " ~ normal( 0 , 100 );\n", sep = "")
         }
       }
       else {
         m_model <- paste(m_model, indent, prefix, name, 
-                         var_suffix[f], " ~ normal( 0 , 10 );\n", 
+                         var_suffix[f], " ~ normal( 0 , 100 );\n", 
                          sep = "")
       }
     }
